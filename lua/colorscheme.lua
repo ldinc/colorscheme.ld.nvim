@@ -15,7 +15,7 @@ function colorscheme.load()
     }
 
     for _, param in pairs(config) do
-        set(param)
+        set(table.unpack(param))
     end
 
     -- TODO: add highlight processor here
