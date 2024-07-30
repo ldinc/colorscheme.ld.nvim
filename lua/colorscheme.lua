@@ -11,7 +11,7 @@ function colorscheme.load()
     o.termguicolors = true
 
     local config = {
-        {0, "normal", { fg = pallete.base.dark, bg = pallete.base.light}}
+        {0, "normal", { fg = pallete.base.dark[0], bg = pallete.base.light[0]}}
     }
 
     for _, param in pairs(config) do
