@@ -10,7 +10,8 @@ function colorscheme.load()
     o.background = "light"
     o.termguicolors = true
 
-    local config = {
+    local config
+    config = {
         {0, "normal", { fg = pallete.base.dark[0], bg = pallete.base.light[0]}}
     }
 
