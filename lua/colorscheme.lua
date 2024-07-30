@@ -14,7 +14,7 @@ function colorscheme.load()
         {0, "normal", { fg = pallete.base.dark, bg = pallete.base.light}}
     }
 
-    for _, param in config do
+    for _, param in pairs(config) do
         set(param)
     end
 
