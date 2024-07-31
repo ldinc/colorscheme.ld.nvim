@@ -2,6 +2,7 @@ return {
   base = {
     -- Background (shades)
     light = {
+      "#fcfcfa",
       "#f8f8f0",
       "#dfdfd8",
       "#c6c6c0",
@@ -12,7 +13,6 @@ return {
       "#4a4a48",
       "#313130",
       "#181818",
-      "#000000",
     },
     -- Foreground
     dark = {
@@ -145,6 +145,64 @@ return {
       "#cfdbe7",
       "#dfe7ef",
       "#eff3f7",
+      "#ffffff"
+    },
+  },
+
+  lavander_indigo = {
+    dark = {
+      "#af5fff",
+      "#9d55e5",
+      "#8c4ccc",
+      "#7a42b2",
+      "#693999",
+      "#572f7f",
+      "#462666",
+      "#341c4c",
+      "#231333",
+      "#110919",
+      "#000000"
+    },
+    light = {
+      "#af5fff",
+      "#b76fff",
+      "#bf7eff",
+      "#c78fff",
+      "#cf9fff",
+      "#d7afff",
+      "#dfbfff",
+      "#e7cfff",
+      "#efdfff",
+      "#f7efff",
+      "#ffffff"
+    }
+  },
+
+  deep_amethyst = {
+    dark = {
+      "#9b87af",
+      "#8b799d",
+      "#7c6c8c",
+      "#6c5e7a",
+      "#5d5169",
+      "#4d4357",
+      "#3e3646",
+      "#2e2834",
+      "#1f1b23",
+      "#0f0d11",
+      "#000000"
+    },
+    light = {
+      "#9b87af",
+      "#a593b7",
+      "#af9fbf",
+      "#b9abc7",
+      "#c3b7cf",
+      "#cdc3d7",
+      "#d7cfdf",
+      "#e1dbe7",
+      "#ebe7ef",
+      "#f5f3f7",
       "#ffffff"
     },
   },

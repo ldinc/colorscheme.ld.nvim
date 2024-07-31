@@ -1,27 +1,28 @@
 local colorscheme = {}
-local pallete = require('lua.base.pallete')
 
 function colorscheme.load()
-    local o = vim.o
-    local g = vim.g
-    local set = vim.api.nvim_set_hl
+  local o = vim.o
+  local g = vim.g
+  local set = vim.api.nvim_set_hl
+  local config = require('lua.config')
 
-    g.colors_name = "ld"
-    o.background = "light"
-    o.termguicolors = true
+  g.colors_name = "ld"
+  o.background = "light"
+  o.termguicolors = true
 
-    local config
-    config = {
-        {0, "normal", { fg = pallete.base.dark[0], bg = pallete.base.light[0]}}
-    }
-
-    for _, param in pairs(config) do
-        set(table.unpack(param))
+  for key, param in pairs(config) do
+    local ns_id = 0
+    local val = param
+    if param.ns_id then
+      ns_id = param.ns_id
+      val = param.val
     end
+    set(ns_id, key, val)
+  end
 
-    -- TODO: add highlight processor here
+  -- TODO: add highlight processor here
 
-    vim.notify("colorscheme.ld.nvim: NOT IMPLEMENTED", vim.log.levels.ERROR)
+  -- vim.notify("colorscheme.ld.nvim: NOT IMPLEMENTED", vim.log.levels.ERROR)
 end
 
 return colorscheme
