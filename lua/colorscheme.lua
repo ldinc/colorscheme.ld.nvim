@@ -4,7 +4,7 @@ function colorscheme.load()
   local o = vim.o
   local g = vim.g
   local set = vim.api.nvim_set_hl
-  local config = require('lua.config')
+  local config = require("config")
 
   g.colors_name = "ld"
   o.background = "light"
