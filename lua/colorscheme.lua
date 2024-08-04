@@ -20,6 +20,11 @@ function colorscheme.load()
     set(ns_id, key, val)
   end
 
+  if Colorscheme_ld == nil then
+    Colorscheme_ld = {}
+  end
+  Colorscheme_ld.config = config
+
   -- TODO: add highlight processor here
 
   -- vim.notify("colorscheme.ld.nvim: NOT IMPLEMENTED", vim.log.levels.ERROR)
