@@ -1,5 +1,5 @@
 local pallete = require('base.pallete')
-local config = require('config')
+-- local cfg = require('config')
 
 local config = {
     name = "ld",
